@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Seseorang yang Istimewa</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <div class="stars-container"></div> 
+    
+    <div id="main-content">
+        <div class="slide active" id="slide1">
+            <p class="date">The Beginning</p>
+            <h1 class="fade-in">Semuanya berawal dari sini...</h1>
+            <p class="quote">"Gak pernah terpikir kalau pertemuan singkat itu bakal jadi awal dari cerita sepanjang ini. Dari sekadar sapaan, jadi alasan aku buat semangat setiap pagi."</p>
+            <button class="next-btn" onclick="goToSlide(2)">Next Memory</button>
+        </div>
+
+        <div class="slide hidden" id="slide2">
+            <h1 class="fade-in">Hal-hal kecil yang aku simpan...</h1>
+            <p class="quote">"Aku ingat cara kamu ketawa, cara kamu ceritain hal yang kamu suka, bahkan cara kamu dengerin keluh kesahku. Mungkin buat kamu itu biasa, tapi buat aku, itu segalanya."</p>
+            <button class="next-btn" onclick="goToSlide(3)">Lanjut...</button>
+        </div>
+
+        <div class="slide hidden" id="slide3">
+            <h1 class="fade-in">Kenapa harus kamu?</h1>
+            <ul class="reasons">
+                <li class="fade-in">Karena di dekatmu, aku merasa cukup menjadi diriku sendiri.</li>
+                <li class="fade-in">Karena kamu adalah satu-satunya orang yang bisa bikin aku tersenyum tanpa harus berkata apa-apa.</li>
+                <li class="fade-in">Dan karena dunia terasa jauh lebih indah saat kita melewatinya bersama.</li>
+            </ul>
+            <button class="next-btn" onclick="goToSlide(4)">Satu hal lagi...</button>
+        </div>
+
+        <div class="slide hidden" id="slide4">
+            <h1 class="fade-in">Terima kasih, ya...</h1>
+            <p class="quote">"Terima kasih sudah membiarkan aku masuk ke duniamu. Aku nggak janji jalannya bakal selalu mulus, tapi aku janji, aku nggak akan biarkan kamu jalan sendirian."</p>
+            <button class="next-btn" onclick="goToSlide(5)">Pertanyaannya...</button>
+        </div>
+
+        <div class="slide hidden" id="slide5">
+            <h1 class="final-text">I want to spend more days with you. <br> Will you be my partner for the rest of the journey?</h1>
+            <div class="action-group">
+                <button id="yesBtn" onclick="finishStory()">Yes, I Will</button>
+                <button id="noBtn" onmouseover="runAway()">No</button>
+            </div>
+        </div>
+
+        <div class="slide hidden" id="finalSlide">
+            <h2 class="heart-beat">❤️</h2>
+            <h1>Officially Yours.</h1>
+            <p>Terima kasih sudah mau jadi bagian dari bahagiaku. Hari ini bakal jadi tanggal favorit baru di kapsul waktu kita.</p>
+
+            <div class="photo-scroller">
+                <div class="photo-track">
+                    <img src="images/avanza.jpg" alt="Memori 1">
+                    <img src="images/Midori-Toyota-Alphard-Transformer-3.jpg" alt="Memori 2">
+                    <img src="images/New-Toyota-Camry.jpg" alt="Memori 3">
+                    <img src="images/Xenia.jpg" alt="Memori 4">
+                </div>
+            </div>
+        
+            <button class="wa-link" onclick="notifyWA()">Kirim Bukti ke WhatsApp Aku</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
